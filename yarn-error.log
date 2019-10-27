@@ -1,0 +1,38 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js licenses list
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/derek/_go/bin:/home/derek/.yarn/bin:/home/derek/_go/bin:/home/derek/.yarn/bin
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  10.16.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/derek/Projects/PDANet+-linux/package.json: Unexpected token } in JSON at position 280
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:304:30)
+      at /usr/share/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "betteryourweb-pdanet",
+    "version": "0.0.1",
+    "description": "Linux script to autoconnect and autocreate proxy for pdanet+",
+    "main": "src/index.js",
+    "repository": "https://github.com/betteryourweb/pdanet",
+    "author": "Derek Williams <betteryourweb@gamil.com>",
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

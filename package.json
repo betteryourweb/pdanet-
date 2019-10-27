@@ -1,0 +1,28 @@
+{
+  "name": "betteryourweb-pdanet",
+  "version": "0.0.1",
+  "description": "Linux script to autoconnect and autocreate proxy for pdanet+",
+  "main": "src/index.js",
+  "repository": "https://github.com/betteryourweb/pdanet",
+  "author": "Derek Williams <betteryourweb@gamil.com>",
+  "license": "Apache-2.0",
+  "bin": "dist/index.js",
+  "scripts": {
+    "dev": "ndoemon --watch src --exec babel-node src/index.js",
+    "build": "rm -rf dist && babel --out-dir dist src",
+    "package": "yarn build && pkg . --out-path bin"
+
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "pkg": "^4.4.0",
+    "rxjs": "^6.5.3",
+    "yargs": "^14.2.0"
+  }
+}
